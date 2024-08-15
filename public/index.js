@@ -19,10 +19,10 @@ window.addEventListener('DOMContentLoaded', (event) => {
   document.addEventListener('DOMContentLoaded', () => {
     const userList = document.querySelector('.user-list');
   
-    // リスト内の削除ボタンにイベントリスナーを追加
+
     userList.addEventListener('click', (event) => {
       if (event.target.classList.contains('delete-button')) {
-        // 削除ボタンの親要素である<li>を削除
+        // 削除ボタン
         const listItem = event.target.closest('.user-name');
         listItem.remove();
       }
